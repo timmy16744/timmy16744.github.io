@@ -6,8 +6,8 @@ const firebaseConfig = {
   storageBucket: "gr8numb3rstasklist.appspot.com",
   messagingSenderId: "755410376709",
   appId: "1:755410376709:web:daf0fe9fd1bba80137a46c",
-  databaseURL: "http://127.0.0.1:9000/?ns=gr8numb3rstasklist"
-  //databaseURL: "https://gr8numb3rstasklist-default-rtdb.firebaseio.com",
+  //databaseURL: "http://127.0.0.1:9000/?ns=gr8numb3rstasklist"
+  databaseURL: "https://gr8numb3rstasklist-default-rtdb.firebaseio.com",
 };
 
 module.exports = { firebaseConfig }; // Use module.exports syntax
