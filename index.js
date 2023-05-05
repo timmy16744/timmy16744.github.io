@@ -1,9 +1,7 @@
 import firebase from "firebase/app";
-import { getDatabase, ref, push, on } from "firebase/database";
-import { firebaseConfig } from "./firebaseConfig.js"; // Import firebaseConfig
-const firebase = require("firebase/app");
-require("firebase/database");
-const { firebaseConfig } = require("./firebaseConfig"); // Use require syntax
+import "firebase/database";
+import { firebaseConfig } from "./firebaseConfig.js";
+
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
