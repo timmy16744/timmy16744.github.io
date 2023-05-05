@@ -1,11 +1,11 @@
 import firebase from "firebase/app";
-import "firebase/database";
+import { getDatabase, ref, push, on } from "firebase/database";
 import { firebaseConfig } from "./firebaseConfig.js";
-
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-const db = firebase.database(); // Initialize the database
+
+const db = getDatabase();
 
 const taskForm = document.getElementById("task-form");
 const tasksList = document.getElementById("tasks-list");
