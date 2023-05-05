@@ -1,0 +1,72 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #E61997;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  input,
+  textarea,
+  select {
+    width: 48%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #E61997;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  button {
+    width: 100%;
+    background-color: #E61997;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #c4167d;
+  }
+  
+  .task-item {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .bank-and-broker-code {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .scrollable-notes {
+    max-height: 100px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    padding: 10px;
+    border: 1px solid #E61997;
+    border-radius: 5px;
+  }
+  

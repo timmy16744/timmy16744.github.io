@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Task List</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>tasks-list</h1>
+        <form id="task-form">
+            <input type="text" id="client-name" placeholder="Client Name" required>
+            <input type="number" id="loan-amount" placeholder="Loan Amount" required>
+            <select id="loan-stage" required>
+                <option value="" disabled selected>Loan Stage</option>
+                <option value="Enquiry">Enquiry</option>
+                <option value="Formal Approval">Formal Approval</option>
+                <option value="Compliance">Compliance</option>
+                <option value="Application Submitted">Application Submitted</option>
+                <option value="Conditional Approval">Conditional Approval</option>
+                <option value="Pending Settlement">Pending Settlement</option>
+                <option value="Cancelled">Cancelled</option>
+                <option value="Declined">Declined</option>
+                <option value="Settled">Settled</option>
+                <option value="Withdrawn">Withdrawn</option>
+                <option value="Progress Draw">Progress Draw</option>
+            </select>
+            <select id="bank" required>
+                <option value="" disabled selected>Name of Bank</option>
+                <option value="ANZ">ANZ</option>
+                <option value="Commonwealth Bank">Commonwealth Bank</option>
+                <option value="National Australia Bank">National Australia Bank</option>
+                <option value="Westpac">Westpac</option>
+            </select>
+            <input type="number" id="broker-code" placeholder="Broker Code" required>
+            <input type="text" id="loan-purpose" placeholder="Loan Purpose" required>
+            <input type="date" id="settlement-date" placeholder="Settlement Date" required>
+            <input type="text" id="loan-id" placeholder="Loan ID" required>
+            <textarea id="notes" placeholder="Notes" required></textarea>
+            <input type="date" id="action-date" placeholder="Action Date" required>
+            <button type="submit">Add Task</button>
+            <button id="fetch-data-button">Fetch Data</button>
+        </form>
+        <ul id="tasks-list"></ul>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+    <script src="firebaseConfig.js"></script>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
